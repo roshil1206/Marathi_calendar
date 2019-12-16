@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="sunday1">#BA2F16</color>
+    <color name="Black">#000000</color>
+    <color name="Blue1">#192A56</color>
+    <color name="currentday">#25CCF7</color>
+    <color name="ekadashi">#6ab04c</color>
+    <color name="purnima">#74B9FF</color>
+    <color name="amavas">#7B8788</color>
+    <color name="others">#EA7773</color>
+    <color name="some">#022054</color>
+</resources>

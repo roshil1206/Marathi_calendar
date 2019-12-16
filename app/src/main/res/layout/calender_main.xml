@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calender_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/calender_back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        /> //backward button
+
+    <ImageButton
+        android:id="@+id/calender_forward_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/front_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       /> //forwad button
+
+    <TextView
+        android:id="@+id/monthname"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="65dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#586776"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calender_back_button"
+        app:layout_constraintTop_toTopOf="parent" />    //monthname
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="रवी"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="सोम"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="मंगळ"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="बुध"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thrusday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="गुरु"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="शुक्र"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="शनि"
+            android:textAlignment="center"
+            android:textColor="#FF3031"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>     //daysname
+
+    <LinearLayout
+        android:id="@+id/daysr1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c1"
+            android:textColor="@color/sunday1"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c2"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c3"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c4"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c5"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c6"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/daysr1c7"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/daysr2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysr1">
+
+        <TextView
+            android:id="@+id/daysr2c1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="@color/sunday1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr2c7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/daysr3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysr2">
+
+        <TextView
+            android:id="@+id/daysr3c1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sunday1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr3c7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/daysr4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysr3">
+
+        <TextView
+            android:id="@+id/daysr4c1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sunday1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr4c7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/daysr5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysr4">
+
+        <TextView
+            android:id="@+id/daysr5c1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sunday1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/daysr5c7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/complete_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysr5"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/extrainfo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/some"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complete_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
